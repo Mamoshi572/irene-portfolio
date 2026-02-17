@@ -18,101 +18,73 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Google Fonts - Unique Combination -->
-    <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Sentient:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts - Elegant Combination -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     
-    <!-- AOS Animation Library -->
+    <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <!-- Swiper Slider CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div class="loader">
-        <div class="loader-content">
-            <div class="loader-text">IC</div>
-            <div class="loader-progress"></div>
-        </div>
-    </div>
-
-    <!-- Custom Cursor -->
-    <div class="cursor"></div>
-    <div class="cursor-dot"></div>
-
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="navbar-container">
+    <header>
+        <nav class="navbar">
             <div class="logo">
-                <a href="#home">IRENE<span>CHEGE</span></a>
+                <a href="#home">IRENE <span>CHEGE</span></a>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-links">
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="nav-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <span class="hero-subtitle" data-aos="fade-up">Welcome to Elegance</span>
-            <h1 class="hero-title">
-                <span class="line"><span>Irene</span></span>
-                <span class="line"><span>Chege</span></span>
-            </h1>
-            <div class="hero-role">
-                <span class="role-item">Model</span>
-                <span class="role-item">Receptionist</span>
-                <span class="role-item">Customer Service Expert</span>
-            </div>
-            <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
-                Combining elegance, professionalism, and exceptional communication skills 
-                to deliver outstanding results in modeling and client relations.
+        <div class="hero-content" data-aos="fade-right">
+            <h3 class="hero-subtitle">Welcome to Elegance</h3>
+            <h1 class="hero-title">Irene <span class="highlight">Chege</span></h1>
+            <h2 class="hero-role">Model & Customer Service Expert</h2>
+            <p class="hero-description">
+                Combining timeless elegance with professional excellence to create 
+                memorable experiences in every interaction.
             </p>
-            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+            <div class="hero-buttons">
                 <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
-                <a href="#contact" class="btn btn-secondary">Hire Me</a>
+                <a href="#contact" class="btn btn-secondary">Let's Connect</a>
             </div>
-            <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
-                <div class="stat-item">
-                    <div class="stat-number" data-target="5">0</div>
-                    <div class="stat-label">Years Experience</div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3 class="counter" data-target="5">0</h3>
+                    <p>Years Experience</p>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="50">0</div>
-                    <div class="stat-label">Projects Done</div>
+                <div class="stat">
+                    <h3 class="counter" data-target="50">0</h3>
+                    <p>Projects Done</p>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="100">0</div>
-                    <div class="stat-label">Happy Clients</div>
+                <div class="stat">
+                    <h3 class="counter" data-target="100">0</h3>
+                    <p>Happy Clients</p>
                 </div>
             </div>
         </div>
-        <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+        <div class="hero-image" data-aos="fade-left">
             <div class="image-frame">
-                <img src="https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Irene Chege Professional Photo" class="main-photo">
-                <div class="floating-badge">
-                    <div class="badge-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <div class="badge-text">
-                        <strong>Top Professional</strong>
-                        <span>2024</span>
-                    </div>
+                <img src="images/hero-photo.jpg" alt="Irene Chege" class="main-photo">
+                <div class="image-badge">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Available for work</span>
                 </div>
             </div>
         </div>
@@ -122,66 +94,60 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">Who Am I</span>
-                <h2 class="section-title">About Me</h2>
+                <span class="section-subtitle">Who I Am</span>
+                <h2 class="section-title">About <span>Me</span></h2>
             </div>
-            <div class="about-grid">
+            <div class="about-content">
                 <div class="about-image" data-aos="fade-right">
-                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Irene Chege About">
+                    <img src="images/about-photo.jpg" alt="Irene Chege">
                     <div class="experience-badge">
                         <span class="years">5+</span>
-                        <span class="text">Years of Excellence</span>
+                        <span>Years of Excellence</span>
                     </div>
                 </div>
                 <div class="about-text" data-aos="fade-left">
-                    <h3>Modeling & Customer Service Professional</h3>
+                    <h3>Where Elegance Meets Professionalism</h3>
                     <p>
-                        With over 5 years of professional experience, I specialize in fashion modeling, 
-                        brand representation, and providing exceptional customer service. My background 
-                        in reception and client relations allows me to bring professionalism and 
-                        interpersonal skills to every project.
+                        With over 5 years of experience in the fashion and service industry, 
+                        I've mastered the art of combining grace with professionalism. My journey 
+                        in modeling and customer service has taught me that true beauty lies in 
+                        genuine connections and authentic interactions.
                     </p>
                     
-                    <div class="skills-container">
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">Fashion Modeling</span>
-                                <span class="skill-percentage">95%</span>
+                    <div class="skills">
+                        <h4>Areas of Expertise</h4>
+                        <div class="skill-bars">
+                            <div class="skill">
+                                <div class="skill-info">
+                                    <span>Fashion Modeling</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="bar">
+                                    <div class="level" style="width: 95%"></div>
+                                </div>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
+                            <div class="skill">
+                                <div class="skill-info">
+                                    <span>Customer Service</span>
+                                    <span>98%</span>
+                                </div>
+                                <div class="bar">
+                                    <div class="level" style="width: 98%"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">Customer Service</span>
-                                <span class="skill-percentage">98%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 98%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">Communication</span>
-                                <span class="skill-percentage">97%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 97%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">Brand Representation</span>
-                                <span class="skill-percentage">92%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 92%"></div>
+                            <div class="skill">
+                                <div class="skill-info">
+                                    <span>Communication</span>
+                                    <span>97%</span>
+                                </div>
+                                <div class="bar">
+                                    <div class="level" style="width: 97%"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
-                    <a href="#" class="btn btn-primary" download>
+                    <a href="#" class="btn btn-primary">
                         <i class="fas fa-download"></i> Download CV
                     </a>
                 </div>
@@ -193,59 +159,59 @@
     <section id="services" class="services">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">What I Do</span>
-                <h2 class="section-title">My Services</h2>
+                <span class="section-subtitle">What I Offer</span>
+                <h2 class="section-title">My <span>Services</span></h2>
             </div>
             <div class="services-grid">
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card" data-aos="flip-up" data-aos-delay="100">
                     <div class="service-icon">
                         <i class="fas fa-camera-retro"></i>
                     </div>
                     <h3>Fashion Modeling</h3>
-                    <p>Runway, editorial, commercial, and print modeling with professional posing techniques.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> Portfolio Shoots</li>
-                        <li><i class="fas fa-check-circle"></i> Fashion Shows</li>
-                        <li><i class="fas fa-check-circle"></i> Product Modeling</li>
+                    <p>Runway, editorial, and commercial modeling with professional posing techniques.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Portfolio Shoots</li>
+                        <li><i class="fas fa-check"></i> Fashion Shows</li>
+                        <li><i class="fas fa-check"></i> Brand Campaigns</li>
                     </ul>
                 </div>
                 
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card" data-aos="flip-up" data-aos-delay="200">
                     <div class="service-icon">
                         <i class="fas fa-headset"></i>
                     </div>
                     <h3>Reception Services</h3>
-                    <p>Professional front desk management and administrative support.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> Client Relations</li>
-                        <li><i class="fas fa-check-circle"></i> Appointment Management</li>
-                        <li><i class="fas fa-check-circle"></i> Office Administration</li>
+                    <p>Professional front desk management with a welcoming presence.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Client Relations</li>
+                        <li><i class="fas fa-check"></i> Appointment Management</li>
+                        <li><i class="fas fa-check"></i> Office Administration</li>
                     </ul>
                 </div>
                 
-                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card" data-aos="flip-up" data-aos-delay="300">
                     <div class="service-icon">
                         <i class="fas fa-comments"></i>
                     </div>
                     <h3>Customer Service</h3>
-                    <p>Exceptional client support and relationship building.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> Client Support</li>
-                        <li><i class="fas fa-check-circle"></i> Problem Solving</li>
-                        <li><i class="fas fa-check-circle"></i> Customer Retention</li>
+                    <p>Exceptional support with a focus on satisfaction and retention.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Client Support</li>
+                        <li><i class="fas fa-check"></i> Problem Resolution</li>
+                        <li><i class="fas fa-check"></i> Relationship Building</li>
                     </ul>
                 </div>
                 
-                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card" data-aos="flip-up" data-aos-delay="400">
                     <div class="service-icon">
-                        <i class="fas fa-bullhorn"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                     <h3>Brand Ambassador</h3>
-                    <p>Representing brands at events and promotions.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> Event Representation</li>
-                        <li><i class="fas fa-check-circle"></i> Product Promotion</li>
-                        <li><i class="fas fa-check-circle"></i> Brand Advocacy</li>
+                    <p>Representing luxury brands with elegance and authenticity.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Event Representation</li>
+                        <li><i class="fas fa-check"></i> Product Promotion</li>
+                        <li><i class="fas fa-check"></i> Brand Advocacy</li>
                     </ul>
                 </div>
             </div>
@@ -257,7 +223,7 @@
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-subtitle">My Work</span>
-                <h2 class="section-title">Portfolio</h2>
+                <h2 class="section-title">Latest <span>Projects</span></h2>
             </div>
             <div class="portfolio-filter" data-aos="fade-up">
                 <button class="filter-btn active" data-filter="all">All</button>
@@ -265,7 +231,9 @@
                 <button class="filter-btn" data-filter="events">Events</button>
                 <button class="filter-btn" data-filter="professional">Professional</button>
             </div>
-            <div class="portfolio-grid" id="portfolio-grid"></div>
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- Portfolio items will be loaded via JavaScript -->
+            </div>
         </div>
     </section>
 
@@ -274,34 +242,31 @@
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-subtitle">My Journey</span>
-                <h2 class="section-title">Experience</h2>
+                <h2 class="section-title">Work <span>Experience</span></h2>
             </div>
             <div class="timeline">
                 <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-dot"></div>
                     <div class="timeline-date">2021 - Present</div>
                     <div class="timeline-content">
                         <h3>Senior Receptionist & Model</h3>
                         <h4>Prestige Corporate Solutions</h4>
-                        <p>Managed front desk operations while participating in corporate branding campaigns as a model.</p>
+                        <p>Managing front desk operations while representing the brand in corporate events and campaigns.</p>
                     </div>
                 </div>
                 <div class="timeline-item" data-aos="fade-left">
-                    <div class="timeline-dot"></div>
                     <div class="timeline-date">2019 - 2021</div>
                     <div class="timeline-content">
-                        <h3>Fashion Model & Customer Service Rep</h3>
+                        <h3>Fashion Model</h3>
                         <h4>Elite Modeling Agency</h4>
-                        <p>Participated in runway shows and fashion shoots while handling client relations.</p>
+                        <p>Participated in runway shows, fashion shoots, and client consultations.</p>
                     </div>
                 </div>
                 <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-dot"></div>
                     <div class="timeline-date">2017 - 2019</div>
                     <div class="timeline-content">
                         <h3>Front Desk Associate</h3>
                         <h4>Luxury Hotel Nairobi</h4>
-                        <p>Provided exceptional customer service in a high-end hospitality environment.</p>
+                        <p>Provided exceptional customer service to high-profile guests.</p>
                     </div>
                 </div>
             </div>
@@ -313,13 +278,10 @@
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-subtitle">Client Feedback</span>
-                <h2 class="section-title">Testimonials</h2>
+                <h2 class="section-title">What <span>They Say</span></h2>
             </div>
-            <div class="testimonials-slider">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper" id="testimonials-container"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
+            <div class="testimonials-grid" id="testimonials-grid">
+                <!-- Testimonials will be loaded via JavaScript -->
             </div>
         </div>
     </section>
@@ -329,32 +291,48 @@
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-subtitle">Get In Touch</span>
-                <h2 class="section-title">Contact Me</h2>
+                <h2 class="section-title">Contact <span>Me</span></h2>
             </div>
-            <div class="contact-grid">
+            <div class="contact-content">
                 <div class="contact-info" data-aos="fade-right">
-                    <div class="info-card">
+                    <div class="info-item">
                         <div class="info-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
-                        <h3>Location</h3>
-                        <p>Nairobi, Kenya</p>
+                        <div class="info-text">
+                            <h3>Location</h3>
+                            <p>Nairobi, Kenya</p>
+                        </div>
                     </div>
-                    <div class="info-card">
+                    <div class="info-item">
                         <div class="info-icon">
                             <i class="fas fa-phone"></i>
                         </div>
-                        <h3>Phone</h3>
-                        <p>+254 758 938 447</p>
+                        <div class="info-text">
+                            <h3>Phone</h3>
+                            <p>+254 758 938 447</p>
+                        </div>
                     </div>
-                    <div class="info-card">
+                    <div class="info-item">
                         <div class="info-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <h3>Email</h3>
-                        <p>irenekagwiria34@gmail.com</p>
+                        <div class="info-text">
+                            <h3>Email</h3>
+                            <p>irenekagwiria34@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Availability</h3>
+                            <p>Mon - Fri: 9AM - 5PM</p>
+                        </div>
                     </div>
                 </div>
+                
                 <div class="contact-form" data-aos="fade-left">
                     <form id="contactForm">
                         <div class="form-group">
@@ -383,26 +361,25 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <a href="#home">IRENE<span>CHEGE</span></a>
-                    <p>Professional Model & Customer Service Expert</p>
+                    <a href="#home">IRENE <span>CHEGE</span></a>
+                    <p>Elegance Meets Professionalism</p>
                 </div>
                 <div class="footer-social">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 Irene Chege. All rights reserved.</p>
-                <p>Designed with <i class="fas fa-heart"></i> for excellence</p>
+               
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
