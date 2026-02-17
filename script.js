@@ -106,64 +106,24 @@ if (statsSection) {
     observer.observe(statsSection);
 }
 
-// ===== Portfolio Data =====
-const portfolioData = [
-    {
-        category: 'modeling',
-        image: 'https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-        title: 'Fashion Editorial',
-        description: 'Vogue Magazine Feature'
-    },
-    {
-        category: 'events',
-        image: 'https://images.unsplash.com/photo-1472653431158-6364773b2a56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-        title: 'Corporate Event',
-        description: 'Brand Ambassador'
-    },
-    {
-        category: 'professional',
-        image: 'https://images.unsplash.com/photo-1551836026-d5c2c5af78e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-        title: 'Client Relations',
-        description: 'Corporate Reception'
-    },
-    {
-        category: 'modeling',
-        image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-        title: 'Product Launch',
-        description: 'Luxury Brand Campaign'
-    },
-    {
-        category: 'events',
-        image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-        title: 'Fashion Week',
-        description: 'Runway Show'
-    },
-    {
-        category: 'professional',
-        image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-        title: 'Business Meeting',
-        description: 'Executive Reception'
-    }
-];
-
 // ===== Testimonials Data =====
 const testimonialsData = [
     {
         name: 'Sarah Johnson',
         position: 'Creative Director',
-        image: 'https://images.unsplash.com/photo-1494790108777-466d3eb243bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80',
+        image: "",
         text: 'Irene brings elegance and professionalism to every project. She has an amazing ability to connect with people and make them feel valued.'
     },
     {
         name: 'Michael Omondi',
         position: 'CEO, Prestige Solutions',
-        image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80',
+        image: '',
         text: 'Working with Irene has been wonderful. Her customer service skills are exceptional and she represents our brand with grace.'
     },
     {
         name: 'Grace Wanjiku',
         position: 'Event Manager',
-        image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80',
+        image: '',
         text: 'Irene\'s attention to detail and professional demeanor made our corporate event a huge success. Highly recommended!'
     }
 ];
